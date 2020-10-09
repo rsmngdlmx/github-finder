@@ -4,7 +4,7 @@ import UserItem from './UserItem';
 import Spinner from '../layout/Spinner';
 
 const Users = ({ users, loading }) => {
-  if (loading) return <Spinner />
+  if (loading) return <Spinner />;
   
   return (
     <div style={ userStyle }>
@@ -26,4 +26,4 @@ const userStyle = {
   gridGap: '1rem'
 };
 
-export default Users
+export default Users;
