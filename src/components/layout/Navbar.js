@@ -10,7 +10,7 @@ const Navbar = ({ icon, title }) => {
       <Link to={ `${baseUrl}` }><div className='navbar-title'><i className={ icon } /> { title }</div></Link>
       <ul>
         <li>
-          <Link to={ `${baseUrl}/about` }>About</Link>
+          <Link to={ `${baseUrl}about` }>About</Link>
         </li>
       </ul>
     </nav>

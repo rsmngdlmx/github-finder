@@ -4,6 +4,8 @@ import Spinner from '../layout/Spinner';
 import Repos from '../repos/Repos';
 import GithubContext from '../../context/github/githubContext';
 
+const baseUrl = process.env.REACT_APP_BASE_URL;
+
 const User = ({ match }) => {
   const { loading, user, getUser, getUserRepos } = useContext(GithubContext);
   
@@ -34,7 +36,7 @@ const User = ({ match }) => {
   return (
     <Fragment>
       <h1>{ name }</h1>
-      <Link to='/' className='btn btn-light my-1'>
+      <Link to={ `${baseUrl}` } className='btn btn-light my-1'>
         <i className='fas fa-long-arrow-alt-left' /> Go back home
       </Link>
       <div className='card grid-2'>
