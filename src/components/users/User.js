@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Spinner from '../layout/Spinner';
+import Footer from '../layout/Footer';
 import Repos from '../repos/Repos';
 import GithubContext from '../../context/github/githubContext';
 
@@ -107,8 +108,9 @@ const User = ({ match }) => {
         <div className='badge badge-primary'>Public repos: { public_repos }</div>
         <div className='badge badge-primary'>Public gists: { public_gists }</div>
       </div>
-      <h2>Newest public repos</h2>
+      <h2>Latest public repos</h2>
       <Repos />
+      <Footer />
     </Fragment>
   )
 }

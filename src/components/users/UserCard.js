@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const baseUrl = process.env.REACT_APP_BASE_URL;
 
-const UserItem = ({ user: { avatar_url, login } }) => {
+const UserCard = ({ user: { avatar_url, login } }) => {
   return (
     <div className='card text-center'>
       <img
@@ -24,8 +24,8 @@ const UserItem = ({ user: { avatar_url, login } }) => {
   );
 }
 
-UserItem.propTypes = {
+UserCard.propTypes = {
   user: PropTypes.object.isRequired
 };
 
-export default UserItem;
+export default UserCard;
