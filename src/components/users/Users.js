@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import UserItem from './UserCard';
+import UserCard from './UserCard';
 import Spinner from '../layout/Spinner';
 import GithubContext from '../../context/github/githubContext';
 
@@ -10,7 +10,7 @@ const Users = () => {
   
   return (
     <div style={ userStyle }>
-      { users.map(user => (<UserItem key={ user.id } user={ user } />)) }
+      { users.map(user => (<UserCard key={ user.id } user={ user } />)) }
     </div>
   );
 }

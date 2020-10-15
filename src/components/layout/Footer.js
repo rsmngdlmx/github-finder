@@ -1,7 +1,7 @@
 import React from 'react';
 import rm from './rm.png';
 
-const Links = () => {
+const Footer = () => {
   return (
     <footer>
       <div>
@@ -41,4 +41,4 @@ const Links = () => {
   );
 }
 
-export default Links;
+export default Footer;
