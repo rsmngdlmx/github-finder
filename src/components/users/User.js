@@ -82,7 +82,7 @@ const User = ({ match }) => {
               { twitter_username && <Fragment>
                 <i className='fab fa-twitter' />{ ' ' }
                 <a
-                  href={ `http://twitter.com/${twitter_username}` }
+                  href={ `https://twitter.com/${twitter_username}` }
                   rel='noopener noreferrer'
                   target='_blank'
                 >
