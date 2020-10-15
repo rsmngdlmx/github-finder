@@ -41,6 +41,20 @@ img {
   width: 100%;
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background-color: #fff;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+}
+
 /* Utilities */
 .navbar-title {
   font-size: 1.2rem;
@@ -50,7 +64,7 @@ img {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 0 2rem 70px 2rem;
 }
 
 /* Text Styles*/

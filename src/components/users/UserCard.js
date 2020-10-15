@@ -17,7 +17,7 @@ const UserItem = ({ user: { avatar_url, login } }) => {
       <h3>{ login }</h3>
       
       <Link
-        to={ `${baseUrl}/user/${login}` }
+        to={ `${baseUrl}user/${login}` }
         className='btn btn-dark btn-sm my-1'
       >Profile</Link>
     </div>
