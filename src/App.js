@@ -8,13 +8,7 @@ import User from './components/users/User';
 import GithubState from './context/github/GithubState';
 import './App.css';
 
-let baseUrl;
-
-if (process.env.NODE_ENV !== 'production') {
-  baseUrl = process.env.REACT_APP_BASE_URL;
-} else {
-  baseUrl = process.env.BASE_URL;
-}
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 const App = () => (
   <GithubState>

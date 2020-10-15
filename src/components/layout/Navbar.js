@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+const baseUrl = process.env.REACT_APP_BASE_URL;
+
 const Navbar = ({ icon, title }) => {
   return (
     <nav className='navbar bg-primary'>
-      <Link to='/'><div className='navbar-title'><i className={ icon } /> { title }</div></Link>
+      <Link to={ `${baseUrl}` }><div className='navbar-title'><i className={ icon } /> { title }</div></Link>
       <ul>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to={ `${baseUrl}/about` }>About</Link>
         </li>
       </ul>
     </nav>
